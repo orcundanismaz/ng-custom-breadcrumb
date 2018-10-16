@@ -1,0 +1,28 @@
+{
+  "name": "ng-custom-breadcrumb",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orcundanismaz/angular-breadcrumb"
+  },
+  "author": {
+    "name": "Orçun Danışmaz",
+    "email": "orcundanismaz@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orcundanismaz/angular-breadcrumb/issues"
+  },
+  "main": "angular-breadcrumb.umd.js",
+  "module": "angular-breadcrumb.js",
+  "jsnext:main": "angular-breadcrumb.js",
+  "typings": "angular-breadcrumb.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}

@@ -1,0 +1,9 @@
+
+<nav aria-label="breadcrumb" [style.font-size]="breadcrumbModel.style?.fontSize">
+    <ol class="breadcrumb" [style.background-color]="breadcrumbModel.style?.bgColor">
+        <li class="breadcrumb-item" [style.font-family]="breadcrumbModel.style?.fontFamily" *ngFor="let item of breadcrumbModel.model;let i = index;" [ngClass]="{'active': i==(breadcrumbModel.model.length-1)}" [attr.aria-current]="i==(breadcrumbModel.model.length-1)? 'page' : null">
+            <span *ngIf="i==(breadcrumbModel.model.length-1)" [style.color]="breadcrumbModel.style?.passiveTextColor">{{item.label}}</span>
+            <a *ngIf="i!=(breadcrumbModel.model.length-1)" href="{{item.url}}" [style.color]="breadcrumbModel.style?.activeTextColor">{{item.label}}</a>
+        </li>
+    </ol>
+</nav>
